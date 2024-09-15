@@ -1,0 +1,39 @@
+.real-estate-container {
+    padding: 20px;
+    margin: 0 50px;
+  }
+  
+  .real-estate-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .real-estate-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .real-estate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 15px; 
+    padding: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .real-estate-grid {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .real-estate-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .Documents{
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+  }
+  

@@ -1,0 +1,22 @@
+.folder-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.folder-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.folder-name {
+  font-size: 14px;
+  color: #000;
+}

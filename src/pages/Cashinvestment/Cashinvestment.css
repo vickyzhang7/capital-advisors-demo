@@ -1,0 +1,57 @@
+.cash-investment-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+
+}
+.cash-investment-item  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 10px 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+  }
+  
+  
+  .cash-investment-title {
+    font-size: 36px;
+    color: #005f99;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cash-investment-description {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cash-investment-button {
+    background-color: #007acc;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cash-investment-button:hover {
+    background-color: #005f99;
+  }
+  

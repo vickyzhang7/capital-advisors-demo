@@ -1,0 +1,27 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .hidden-content {
+    margin-top: 10px;
+    display: none;
+    font-size: 1rem;
+  }
+  
+  .card:hover .hidden-content {
+    display: block;
+  }
+  

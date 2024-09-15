@@ -1,0 +1,36 @@
+.team-member {
+    background-color: #f8f9fa;
+    padding: 24px;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member__image {
+    width: 200px; 
+    height: 200px; 
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-member__name {
+    font-size: 19px;
+    margin-top: 16px;
+}
+
+.team-member__title {
+    font-size: 16px;
+    color: #666;
+}
+
+.team-member__links a {
+    display: block;
+    color: #007bff;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.team-member__links a:hover {
+    text-decoration: underline;
+}

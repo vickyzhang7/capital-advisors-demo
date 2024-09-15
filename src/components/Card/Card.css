@@ -1,0 +1,44 @@
+.card-container .ant-card {
+  height: 500px; 
+}
+
+.card-container .ant-card-cover img {
+  height: 250px;
+}
+
+.card-container .ant-card-body {
+  font-weight: 500;
+  font-size: 14px;
+  color: #191919;
+  padding: 20px 10px;
+}
+
+.card-container .property-type {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(25, 25, 25, 0.3);
+}
+
+.card-container .value-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.card-container .value {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card-container .label {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(25, 25, 25, 0.3);
+}
+.card-word{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px
+
+}

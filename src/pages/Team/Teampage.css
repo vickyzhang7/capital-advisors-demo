@@ -1,0 +1,22 @@
+.team-page {
+    text-align: center;
+    padding: 32px;
+}
+
+.team-page__title {
+    font-size: 40px;
+    color: #23395d;
+}
+
+.team-page__subtitle {
+    font-size: 24px;
+    color: #23395d;
+    margin-bottom: 48px;
+}
+
+.team-page__members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: center;
+    gap: 32px;
+}
