@@ -8,9 +8,11 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-// CORS configuration
+// CORS configuration based on environment
 app.use(cors({
-  origin: ['https://capital-advisors-demo.com', 'https://main--capital-advisors-demo-weiqi.netlify.app'], // Allowed domains
+  origin: process.env.NODE_ENV === 'production' 
+    ? 'https://capital-advisors-demo.com' // Production domain
+    : 'http://localhost:3000',  // Development domain
   methods: ['GET', 'POST'],
   credentials: true
 }));
@@ -54,8 +56,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// Directly specify the port number
-const PORT = 5001; // Set your desired port number directly here
+// Start the server
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
