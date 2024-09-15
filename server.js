@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // CORS configuration based on environment
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
+  origin: process.env.NODE_ENV === 'production'
     ? 'https://capital-advisors-demo.com' // Production domain
     : 'http://localhost:3000',  // Development domain
   methods: ['GET', 'POST'],
@@ -56,8 +56,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// Start the server
-const PORT = process.env.PORT || 5001;
+// Directly specify the port number
+const PORT = 5001; // Set your desired port number directly here
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
