@@ -1,3 +1,6 @@
+// Set NODE_ENV directly in your code
+process.env.NODE_ENV = 'development'; // Change to 'production' as needed
+
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
@@ -57,7 +60,7 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 5001;
+const PORT = 5001; // Use a fixed port number
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

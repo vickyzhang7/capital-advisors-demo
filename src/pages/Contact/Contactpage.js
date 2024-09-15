@@ -18,6 +18,7 @@ const Contactpage = () => {
 
   const solutionsItems = ['Choose one','Cash Investments', 'Risk Management', 'Debt Finance Consulting'];
 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
