@@ -4,8 +4,6 @@ import { Row, Col , Button } from 'antd';
 import Card from '../../components/Card/Card';
 import Dataroom from '../../components/Dataroom/Dataroom';
 import AWS from 'aws-sdk';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const Realestate = () => {
   const [properties, setProperties] = useState([]);
@@ -20,7 +18,7 @@ const Realestate = () => {
   AWS.config.update({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  region: process.env.AWS_REGION,
+  region: 'us-east-2',
   });
 
   
