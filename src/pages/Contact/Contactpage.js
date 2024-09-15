@@ -32,9 +32,10 @@ const Contactpage = () => {
       await axios.post(apiUrl, formData);
       setSubmitted(true);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Error submitting form:', error.response ? error.response.data : error.message);
     }
   };
+  
 
   const closeModal = () => {
     setSubmitted(false);

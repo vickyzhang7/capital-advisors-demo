@@ -62,7 +62,7 @@ const Realestate = () => {
     fetchS3Files('AnnualReport/').then(setTaxFiles);
     fetchS3Files('Docs/').then(setDocsFiles);
     fetchS3Files('Photos/').then(setPhotosFiles);
-  }, []);  // No more dependency issues
+  }, []); 
   
   
 
