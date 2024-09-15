@@ -8,11 +8,9 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-// CORS configuration based on environment
+// CORS configuration
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production'
-    ? 'https://capital-advisors-demo.com' // Production domain
-    : 'http://localhost:3000',  // Development domain
+  origin: ['https://capital-advisors-demo.com', 'https://main--capital-advisors-demo-weiqi.netlify.app'], // Allowed domains
   methods: ['GET', 'POST'],
   credentials: true
 }));
