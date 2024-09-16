@@ -37,7 +37,7 @@ db.connect((err) => {
 });
 
 // Define the API route for contact form submission
-app.post('/api/contact', (req, res) => {
+app.post('/api/contact-us', (req, res) => {
   const { name, email, subject, message } = req.body;
   const query = 'INSERT INTO contacts (name, email, subject, message) VALUES (?, ?, ?, ?)';
 
