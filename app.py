@@ -18,7 +18,7 @@ def get_stock_data(symbol):
         closing_prices = [float(daily_data[date]['4. close']) for date in dates]
 
         return {
-            'dates': dates[:10],  # 获取最近10天的数据
+            'dates': dates[:10],  
             'prices': closing_prices[:10]
         }
     else:

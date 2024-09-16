@@ -1,15 +1,24 @@
+const { exec } = require('child_process'); // Required to start the Python app
 process.env.NODE_ENV = 'production'; // Change to 'production' as needed
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
-const path = require('path'); 
+const path = require('path');
 const bodyParser = require('body-parser');
+
+// Start the Python app
+exec('python app.py', (err, stdout, stderr) => {
+  if (err) {
+    console.error(`Error starting Python app: ${err}`);
+    return;
+  }
+  console.log(`Python app output: ${stdout}`);
+});
 
 // Initialize the app
 const app = express();
 app.use(bodyParser.json());
 console.log('Running in environment:', process.env.NODE_ENV);
-
 
 // CORS configuration based on environment
 app.use(cors({
@@ -17,7 +26,6 @@ app.use(cors({
   methods: ['GET', 'POST'],
   credentials: true
 }));
-
 
 // Database connection (adjust with your RDS credentials)
 const db = mysql.createConnection({
