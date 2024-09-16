@@ -11,6 +11,16 @@ const Contactpage = () => {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  // 在 Contactpage.js 中，确认请求 URL
+axios.post('https://capital-advisors-demo.com/api/contact', formData)
+.then(response => {
+  console.log('Form submitted successfully:', response);
+})
+.catch(error => {
+  console.error('Error submitting form:', error);
+});
+
+
   // Define API URL based on the environment
   const apiUrl = process.env.NODE_ENV === 'production'
     ? 'https://capital-advisors-demo.com/api/contact' 
