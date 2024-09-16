@@ -5,7 +5,8 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
-API_KEY = 'ZTLWH4H671Z88CYW'
+API_KEY = os.getenv('ALPHAVANTAGE_API_KEY')
+
 
 def get_stock_data(symbol):
     url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&apikey={API_KEY}'
