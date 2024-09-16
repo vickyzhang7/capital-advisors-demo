@@ -7,7 +7,7 @@ const Stockmarket = () => {
 
   const fetchStockData = async (symbol) => {
     try {
-      const response = await fetch(`https://capital-advisors-demo-1.onrender.com/stock/${symbol}`);
+      const response = await fetch(`http://127.0.0.1:5000/stock/${symbol}`);
       const data = await response.json();
       setStockData(data);
     } catch (error) {
