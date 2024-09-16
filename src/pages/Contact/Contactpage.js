@@ -115,7 +115,7 @@ const Contactpage = () => {
         </label>
         
         <button type="submit" className="contact-button">
-          Send !
+          Send
         </button>
       </form>
       {submitted && (
