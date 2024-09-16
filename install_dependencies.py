@@ -2,7 +2,7 @@ import json
 import subprocess
 
 # Load dependencies from JSON
-with open('dependencies.json', 'r') as file:
+with open('package.json', 'r') as file:
     data = json.load(file)
 
 # Install dependencies
