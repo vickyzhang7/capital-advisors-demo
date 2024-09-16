@@ -16,6 +16,7 @@ const Stockmarket = () => {
   };
   
   // http://127.0.0.1:5000/stock/${symbol}`
+  //https://capital-advisors-demo-1.onrender.com/stock/${symbol}
 
   
   useEffect(() => {
