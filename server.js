@@ -1,6 +1,4 @@
-// Set NODE_ENV directly in your code
 process.env.NODE_ENV = 'production'; // Change to 'production' as needed
-
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
@@ -10,6 +8,8 @@ const bodyParser = require('body-parser');
 // Initialize the app
 const app = express();
 app.use(bodyParser.json());
+console.log('Running in environment:', process.env.NODE_ENV);
+
 
 // CORS configuration based on environment
 app.use(cors({
@@ -60,7 +60,7 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-const PORT = 5001; // Use a fixed port number
+const PORT = 5001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
