@@ -23,7 +23,7 @@ const Contactpage = () => {
 
   // Define API URL based on the environment
   const apiUrl = process.env.NODE_ENV === 'production'
-    ? 'https://capital-advisors-demo.com/api/contact-us' 
+    ? 'https://capital-advisors-demo.com/api/contact' 
     : 'http://localhost:5001/api/contact';
 
   const solutionsItems = ['Choose one','Cash Investments', 'Risk Management', 'Debt Finance Consulting'];
