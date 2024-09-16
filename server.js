@@ -13,12 +13,11 @@ console.log('Running in environment:', process.env.NODE_ENV);
 
 // CORS configuration based on environment
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? 'https://capital-advisors-demo.com' // Production domain
-    : 'http://localhost:3000',  // Development domain
+  origin: '*',
   methods: ['GET', 'POST'],
   credentials: true
 }));
+
 
 // Database connection (adjust with your RDS credentials)
 const db = mysql.createConnection({
