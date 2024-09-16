@@ -122,7 +122,7 @@ const Contactpage = () => {
         <div className="modal">
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
-            <p>Thank you for contacting us!</p>
+            <p>Thank you for contacting us!! </p>
           </div>
         </div>
       )}
