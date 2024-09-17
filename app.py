@@ -22,9 +22,10 @@ def get_stock_data(symbol):
         dates = list(daily_data.keys())
         closing_prices = [float(daily_data[date]['4. close']) for date in dates]
 
+        # Reverse the order of the dates and prices to show the oldest first
         return {
-            'dates': dates[:10],  
-            'prices': closing_prices[:10]
+            'dates': dates[:10][::-1],  # Reverse the list of dates
+            'prices': closing_prices[:10][::-1]  # Reverse the list of prices
         }
     else:
         return {'error': 'Unable to fetch data for the symbol'}

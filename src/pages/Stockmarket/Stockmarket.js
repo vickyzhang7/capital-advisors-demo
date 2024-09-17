@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Stockchart from '../../components/Stockchart/Stockchart';
+import './Stockmarket.css';
 
 const Stockmarket = () => {
   const [stockSymbol, setStockSymbol] = useState('AAPL');  
