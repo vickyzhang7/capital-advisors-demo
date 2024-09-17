@@ -28,7 +28,7 @@
   
   .cash-investment-title {
     font-size: 36px;
-    color: #005f99;
+    color:#007acc;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -52,6 +52,6 @@
   }
   
   .cash-investment-button:hover {
-    background-color: #005f99;
+    background-color: #007acc;
   }
   

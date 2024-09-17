@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .risk-management-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    color: #007acc;
+    margin-bottom: 20px;
+  }
+  
+  .risk-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    color: #007acc;
+    font-weight: bold;
+  }
+  
+  .select-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    background-color: #007acc;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #005a9c;
+  }
+  
+  .modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(154, 205, 250);
+    max-width: 500px;
+    height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    position: relative;
+  }
+  
+  .chart {
+    margin: 20px auto;
+  }
+  
+  .modal-title {
+    text-align: center;
+    color: #007acc;
+  }
+  
+  .advice {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .close-button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .close-button:hover {
+    background-color: #005a9c;
+  }
+  

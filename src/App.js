@@ -8,6 +8,7 @@ import Contactpage from './pages/Contact/Contactpage';
 import Cashinvestment from './pages/Cashinvestment/Cashinvestment';
 import Realestate from './pages/Realestate/Realestate';
 import Stockmarket from './pages/Stockmarket/Stockmarket';
+import Riskmanagement from './pages/Riskmanagement/Riskmanagement';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cash-investments" element={<Cashinvestment />} />
           <Route path="/cash-investments/real-estate" element={<Realestate />} />
           <Route path="/cash-investments/stock-market" element={<Stockmarket />} />
+          <Route path='/risk-management' element={<Riskmanagement />} />
           <Route path="/contact-us" element={<Contactpage />} />
         </Routes>
       </div>

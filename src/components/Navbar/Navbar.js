@@ -34,7 +34,6 @@ const Navbar = () => {
 
   const whoWeAreItems = ['Our Story', 'Our Team'];
   const solutionsItems = ['Cash Investments', 'Risk Management', 'Debt Finance Consulting'];
-  const insightItems = ['News', 'Event'];
 
   return (
     <div className="navbar-container">
@@ -47,7 +46,6 @@ const Navbar = () => {
         {/* Dropdowns */}
         <Dropdown title="Who We Are" items={whoWeAreItems} />
         <Dropdown title="Solutions" items={solutionsItems} />
-        <Dropdown title="Insight" items={insightItems} />
 
         <Link to="/contact-us" className="navbar-link">
           Contact Us
