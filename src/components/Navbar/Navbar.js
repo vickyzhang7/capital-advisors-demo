@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   const whoWeAreItems = ['Our Story', 'Our Team'];
-  const solutionsItems = ['Cash Investments', 'Risk Management', 'Debt Finance Consulting'];
+  const solutionsItems = ['Cash Investments', 'Risk Management'];
 
   return (
     <div className="navbar-container">
