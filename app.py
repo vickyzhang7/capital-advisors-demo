@@ -29,6 +29,10 @@ def get_stock_data(symbol):
         }
     else:
         return {'error': 'Unable to fetch data for the symbol'}
+    
+@app.route('/')
+def home():
+    return "Welcome to the Stock Price API"
 
 @app.route('/stock/<symbol>', methods=['GET'])
 def stock(symbol):
