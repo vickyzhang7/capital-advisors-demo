@@ -7,7 +7,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 // Start the Python app
-exec('python app.py', (err, stdout, stderr) => {
+exec('python app.py', (err, stdout) => {
   if (err) {
     console.error(`Error starting Python app: ${err}`);
     return;
@@ -48,7 +48,7 @@ app.post('/api/contact', (req, res) => {
   const { name, email, subject, message } = req.body;
   const query = 'INSERT INTO contacts (name, email, subject, message) VALUES (?, ?, ?, ?)';
 
-  db.query(query, [name, email, subject, message], (err, result) => {
+  db.query(query, [name, email, subject, message], (err) => {
     if (err) {
       console.error('Error saving contact form:', err);
       res.status(500).send('Error saving contact form');
@@ -62,7 +62,7 @@ app.post('/api/contact', (req, res) => {
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Catch-all handler: serve React app's index.html for all unknown routes
-app.get('*', (req, res) => {
+app.get('*', (res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 

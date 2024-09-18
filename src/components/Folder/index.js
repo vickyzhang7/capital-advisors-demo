@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';  // 引入CSS文件
+import './index.css'; 
 import folderIcon from '../../assets/icons/folder.svg';
 
 const Folder = ({ name, onClick }) => {

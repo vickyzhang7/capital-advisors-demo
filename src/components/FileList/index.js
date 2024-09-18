@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';  // 引入CSS文件
+import './index.css'; 
 import FileIcon from '../../assets/icons/file';
 import downloadIcon from '../../assets/icons/download.svg';
 
