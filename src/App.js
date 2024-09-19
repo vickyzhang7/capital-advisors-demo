@@ -27,6 +27,10 @@ function App() {
           <Route path="/contact-us" element={<Contactpage />} />
         </Routes>
       </div>
+      <footer className="footer">
+        <div className="footer-text">Weiqi Zhang Copyright 2024  </div>
+        <div className="footer-text">Investment Made Easy!</div>
+      </footer>
     </div>
   );
 }

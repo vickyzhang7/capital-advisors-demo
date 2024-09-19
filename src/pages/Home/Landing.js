@@ -53,11 +53,6 @@ const Landing = () => {
           content="Access international markets and opportunities, ensuring that your portfolio is globally diversified and positioned for growth."
         />
       </div>
-
-      <footer className="footer">
-        <div className="footer-text">Weiqi Zhang Copyright 2024  </div>
-        <div className="footer-text">Investment Made Easy!</div>
-      </footer>
     </div>
   );
 };
