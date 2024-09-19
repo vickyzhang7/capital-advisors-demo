@@ -8,7 +8,7 @@ const Stockmarket = () => {
 
   const fetchStockData = async (symbol) => {
     try {
-      const response = await fetch(`https://capital-advisors-demo.onrender.com/stock/${symbol}`);
+      const response = await fetch(`https://capital-advisors-backend-5e2bb6d14e90.herokuapp.com/stock/${symbol}`);
       const data = await response.json();
       setStockData(data);
     } catch (error) {
